@@ -16,4 +16,4 @@ function lastChars(a, b){
     }if(b.length === 0){
     return a.charAt(0)+"@"
     }return a.charAt(0)+b.charAt(b.length-1)
-  }
+  }console.log(lastChars('last', 'chars'));
