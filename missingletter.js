@@ -5,3 +5,16 @@
 
 // E.g ['a','b','c','d','f'] =>'e'
 // ['O','Q','R','S']=>'P'
+
+function missingletter(arr){
+    let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let start = alphabet.indexOf(arr[0])
+    let end = alphabet.indexOf(arr[arr.length-1])
+    let subarr = alphabet.slice(start,end+1)
+    for(let i = 0; i < subarr.length; i++){
+        let letter = subarr[i]
+        if(!arr.includes(letter)){
+            return letter
+        }
+    }return "No missing letter"
+}console.log(missingletter(['a','b','c','d','f']));
