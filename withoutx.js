@@ -21,4 +21,4 @@ if(str.startsWith("x") && str.endsWith("x")){
     let endx = str.slice(0,end) 
     return endx
  } return str
-}console.log(withoutX('chxiu'));
+}console.log(withoutX('xxhi'));
